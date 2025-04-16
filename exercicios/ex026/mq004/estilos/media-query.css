@@ -35,6 +35,12 @@ Grandes telas: acima de 1200px
         color: black;
         text-shadow: none;
     }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
 }
 
 @media screen and (min-width: 768px) { /* TABLET */
