@@ -1,4 +1,4 @@
-@charset UTF-8;
+@charset "UTF-8";
 
 * {
     margin: 0;
@@ -26,12 +26,13 @@ header {
 }
 
 header h1 {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
 }
 
 header > nav {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 
     display: flex;
     flex-flow: row wrap;
@@ -52,6 +53,7 @@ header > nav > a:hover {
     background-color: white;
     color: black;
     transition: background-color 0.5s;
+}
 
 main {
     background-color: white;
