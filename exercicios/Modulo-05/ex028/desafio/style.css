@@ -14,56 +14,45 @@ body, html {
 
 .container {
     display: grid;
-    grid-template-rows: 2fr 1fr 6fr 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 150px 100px 1fr 100px;
+    grid-template-columns: 1fr 200px;
     gap: 10px;
-    max-width: 80vw;
-    margin: auto;
-    height: 90vh;
-    padding: 10px;
-    
+    height: 100vh;
+    padding: 10px;    
+}
+
+.caixa {
+    border: 1px solid black;
+    background-color: lightsalmon;
+    place-content: center;
+
     color: rgb(31, 31, 204);
     font-weight: bold;
     font-size: 1.5em;
-    text-align: center;    ;
+    text-align: center;
 }
 
-.topo {
+#topo {
     grid-row: 1 / 2;
-    grid-column: 1 / 4;
-    border: 1px solid black;
-    background-color: lightsalmon;
-    place-content: center;
-}
-
-.menu {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    border: 1px solid black;
-    background-color: lightsalmon;
-    place-content: center;
-}
-
-.principal {
-    grid-row: 3 / 4;
     grid-column: 1 / 3;
-    border: 1px solid black;
-    background-color: lightsalmon;
-    place-content: center;
 }
 
-.secundario {
+#menu {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+#principal {
     grid-row: 3 / 4;
-    grid-column: 3 / 4;
-    border: 1px solid black;
-    background-color: lightsalmon;
-    place-content: center;
+    grid-column: 1 / 2;
 }
 
-.rodape {
+#secundario {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+#rodape {
     grid-row: 4 / 5;
-    grid-column: 1 / 4;
-    border: 1px solid black;
-    background-color: lightsalmon;
-    place-content: center;
+    grid-column: 1 / 3;
 }
